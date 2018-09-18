@@ -1,0 +1,29 @@
+<div class="cover popup" *ngIf='store.LoginCoverBl'>
+  <input type="button" [(ngModel)]='store.LoginCoverMsg' (click)='changeCover(false)' class="p-cen" />
+</div>
+
+<div class="login">
+  <div class="margin j-cen">
+    
+    <div class="left">其实应该放张图</div>
+    <div class="right">
+      <p class="j-cen cleak">
+        <span class="a" (click)='changeview("login")' [class.active]='store.LoginView' >账号登录</span>
+        <!--<i>|</i>-->
+        <span class="b" (click)='changeview("reg")' [class.active]='!store.LoginView'>账号注册</span>
+      </p>
+      <div class="box">
+        <div class="one j-col-cen" *ngIf='store.LoginView' >
+          <input type="text" placeholder="请输入网易邮箱账号" [(ngModel)]='UserName' />
+          <input type="password" placeholder="请输入密码" [(ngModel)]='PassWord'  />
+          <span class="log" (click)='sendMsg("login")' >登&nbsp;&nbsp;&nbsp;录</span>
+        </div>
+        <div class="two j-col-cen" *ngIf='!store.LoginView'>
+          <input type="text" placeholder="注册用户名" [(ngModel)]='UserName' />
+          <input type="password" placeholder="请输入密码" [(ngModel)]='PassWord' />
+          <span class="reg" (click)='sendMsg("reg")'>注&nbsp;&nbsp;&nbsp;册</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	

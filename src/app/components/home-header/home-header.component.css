@@ -1,0 +1,172 @@
+#homeheader{
+	height: 140px;
+	border-bottom:solid 1px #ccc ;
+}
+#homeheader a{
+	text-decoration: none;
+	color:#333
+}
+#homeheader .up{height: 100px;background: #fff;width: 1110px;
+left: 0;top: 0;right: 0;margin: auto;z-index: 30;}
+
+#homeheader .up .logo {display: block;}
+#homeheader .up .logo h1{display: none;}
+#homeheader .up .logo img{
+	width: 70px;
+	height: 48px;
+}
+#homeheader .up .logo span{
+	height: 48px;
+	font: 28px/48px "";
+	padding-left: 10px;
+}
+#homeheader .up .logo p{
+	font-size: 18px;
+	text-align: center;
+	margin-top: 8px;
+}
+#homeheader .up-m .search{
+	width: 514px;
+	height: 40px;
+	border: solid 2px #f00;
+	border-radius: 20px;
+}
+#homeheader .up-m i{color: #999;}
+#homeheader .up-m input{
+	border: 0;
+	flex: 1;
+	font-size: 20px;
+	padding: 0 10px;
+	margin: 0 5px;
+}
+#homeheader .up-m .fangda{
+	width: 60px;
+	height: 100%;
+	background: #f00;
+	border-radius: 17px;
+}
+#homeheader .up-m span span{
+	color: #fff;
+	font-size: 20px;
+}
+#homeheader .up .options{margin: 10px 0 0 30px;}
+#homeheader .up .options span{
+	font-size: 12px;
+	color: #999;
+	padding: 3px;
+}
+#homeheader .up .options span.avtive{color: #f00;}
+
+#homeheader .up .goodslist{
+	width: 110px;
+	height: 40px;
+	border: solid 2px #f00;
+	border-radius: 20px;
+	margin: 0 60px 24px 0 ;
+	cursor: pointer;
+}
+#homeheader .up .goodslist i{color: #f00;}
+#homeheader .up .goodslist b{
+	padding:  0 8px;
+	font-size: 14px;
+}
+#homeheader .up .goodslist .num{
+	width: 20px;
+	height: 20px;
+	/*padding: 5px;*/
+	text-align: center;
+	background: #f40;
+	border-radius: 10px;
+	font:900 10px/20px "";
+	color: #fff;
+}
+#homeheader .nav{height: 40px;}
+#homeheader .nav .alloptions{
+	width: 164px;
+	margin-right: 20px;
+	float: left;
+	position: relative;
+	}
+#homeheader .nav .alloptions .all{
+	display: block;
+	width: 164px;
+	font: 16px/40px "";
+	color: #fff;
+	background: #f00;
+	box-sizing: border-box;
+	padding:  0 10px;
+}
+#homeheader .nav .alloptions:hover .subnav{
+	display:block;
+}
+#homeheader .nav .alloptions .all span{
+	padding-left: 20px;
+}
+
+/*二级菜单*/
+#homeheader .nav .alloptions .subnav{
+	position: absolute;
+	left: 0;
+	top: 40px;
+	width: 164px;
+	padding: 0 2px;
+	background: #f00;
+	box-sizing: border-box;
+	z-index: 10;
+	display: none;
+}
+#homeheader .nav .alloptions .subnav:hover .sec_nav{
+	display: block;
+}
+#homeheader .nav .alloptions .subnav li.sec_nav{
+	position: absolute;
+	top: 0;
+	left: 164px;
+	height: 460px;
+	width: 800px;
+	z-index: 10;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 40px;
+	display: none;
+}
+#homeheader .nav .alloptions .subnav li.sec_nav dl{
+	width: 350px;
+	float: left;
+}
+#homeheader .nav .alloptions .subnav li.sec_nav dl dt{
+	float: left;
+	width: 330px;
+	font: 14px /20px "";
+	padding: 10px;
+	padding-bottom: 0;
+	border-bottom: solid 1px #ccc;
+	box-sizing: border-box;
+}
+#homeheader .nav .alloptions .subnav li.sec_nav dl dd{
+	float: left;
+	padding: 10px;
+}
+#homeheader .nav .alloptions .subnav li .j-bet{
+	height: 46px;
+	font: 16px/46px "";
+	color: #fff;
+}
+#homeheader .nav .alloptions .subnav li a:hover{
+	background: #fff;
+	color: #f00;
+}
+#homeheader .nav .alloptions .subnav li a i{
+	padding: 0 8px;
+	font-size: 16px;
+}
+
+
+#homeheader .nav .nav-a{
+	float: left;
+	font:900 16px/40px "" ;
+	color:#000;
+	padding: 0 20px;
+}
+#homeheader .nav .nav-a:hover{color: #f00;}
+#homeheader .nav .nav-a.active{color: #fff;background:#f40;border-radius: 8px}

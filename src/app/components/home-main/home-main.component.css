@@ -1,0 +1,91 @@
+#main_up .first_floor .box {
+    margin-top: 26px;
+    height: 388px; }
+    #main_up .first_floor .box ul li {
+      float: left;
+      margin-right: 10px; }
+      #main_up .first_floor .box ul li a {
+        display: block; }
+  
+  #main_up .second_floor {
+    height: 470px; }
+    #main_up .second_floor .title {
+      padding: 20px 8px 10px;
+      border-top: solid 1px #ccc; }
+      #main_up .second_floor .title span {
+        font-size: 18px; }
+      #main_up .second_floor .title a {
+        font: 14px "";
+        color: #999; }
+    #main_up .second_floor .goodslist {
+      float: left;
+      width: 840px;
+      /*border-top: solid 1px #999;
+          border-left: solid 1px #999;*/ }
+      #main_up .second_floor .goodslist li {
+        float: left;
+        width: 415px;
+        background: #fff;
+        margin: 0 3px 5px 0; }
+        #main_up .second_floor .goodslist li .img {
+          float: left;
+          position: relative; }
+          #main_up .second_floor .goodslist li .img e {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(255, 255, 255, 0.2);
+            display: none; }
+          #main_up .second_floor .goodslist li .img img {
+            width: 188px;
+            height: 188px; }
+          #main_up .second_floor .goodslist li .img:hover e {
+            display: block; }
+        #main_up .second_floor .goodslist li div {
+          float: right;
+          width: 205px;
+          height: 188px;
+          margin-right: 10px; }
+          #main_up .second_floor .goodslist li div h3 {
+            font-size: 16px;
+            padding: 12px 0 10px; }
+            #main_up .second_floor .goodslist li div h3 a {
+              color: #000; }
+              #main_up .second_floor .goodslist li div h3 a:hover {
+                text-decoration: underline; }
+          #main_up .second_floor .goodslist li div h4 {
+            font: 12px "";
+            width: 198px; }
+            #main_up .second_floor .goodslist li div h4 a {
+              color: #ccc; }
+          #main_up .second_floor .goodslist li div p {
+            margin-top: 10px; }
+            #main_up .second_floor .goodslist li div p b, #main_up .second_floor .goodslist li div p span {
+              font: 900 18px "";
+              color: red; }
+            #main_up .second_floor .goodslist li div p i {
+              font-size: 10px;
+              margin-left: 5px; }
+            #main_up .second_floor .goodslist li div p del {
+              text-decoration: line-through; }
+          #main_up .second_floor .goodslist li div .now {
+            display: block;
+            width: 80px;
+            height: 30px;
+            border: solid 1px #f40;
+            font: 16px/30px "";
+            text-align: center;
+            border-radius: 15px;
+            color: #f40;
+            margin: 16px 0 0 110px; }
+            #main_up .second_floor .goodslist li div .now:hover {
+              background: #F8D7DA; }
+    #main_up .second_floor .aside {
+      display: block;
+      float: left; }
+      #main_up .second_floor .aside img {
+        width: 260px;
+        height: 380px; }
+  

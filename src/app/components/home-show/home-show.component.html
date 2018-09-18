@@ -1,0 +1,79 @@
+<div id="main_show">
+    <ul class="margin">
+
+      <li 
+      class="kids"
+      *ngFor='let item of data.homeData;trackBy:item?._id'>
+        <div class="title clear">
+          <span>{{ item.title.ti }}</span>
+          <dl class="j-cen">
+            <dt>热搜词：</dt>
+
+            <dd 
+            *ngFor='let hot of item.title.hot'
+            [class]= hot.class ><a>{{ hot.des }}</a></dd>
+
+          </dl>
+          <a href="#" class="more">更多精选></a>
+        </div>
+        <div class="cont">
+          <a class="left">
+            <img [src]= item.cont.left.src />
+          </a>
+          <ul class="middle">
+
+            <li
+            *ngFor='let middle of item.cont.middle'
+            ><a class="j-col-cen">
+              <span>{{ middle.title }}</span>
+              <i>{{ middle.des}}</i>
+              <b class="cover_e"></b>
+              <img [src]= middle.src />
+            </a></li>
+            
+          </ul>
+          <div class="right">
+            <div class="top">
+              <span>最新热卖</span>
+            </div>
+            <div class="reveal">
+              <ul>
+
+                <li 
+                class="j-cen"
+                *ngFor='let right of item.cont.right'
+                >
+                  <a class="img"><img [src]= right.src /></a>
+                  <div class="price">
+                    <a>{{ right.des }}</a>
+                    <p>
+                      <span>￥{{ right.price }}</span>
+                      <del>￥{{ right.price2 }}</del>
+                    </p>
+                  </div>
+                </li>
+                
+                
+              </ul>								
+            </div>
+          </div>
+        </div>
+        <div class="brands clear">
+          <dl>
+            <dt>{{ item.cont.hotbands.title }}</dt>
+
+            <dd 
+            class="valign"
+            *ngFor='let msg of item.cont.hotbands.msg'
+            >
+              <a class="pic"><img [src]= msg.src /></a>
+              <i class="iconfont">&#xe502;</i>
+            </dd>
+            
+            
+          </dl>
+        </div>
+      </li>
+      
+    </ul>
+  </div>

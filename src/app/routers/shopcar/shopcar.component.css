@@ -1,0 +1,202 @@
+#shopcar {
+  padding: 40px 6px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#shopcar .title {
+  border: solid 1px #ccc;
+  height: 40px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+#shopcar .title .kuang {
+  width: 10px;
+  height: 10px;
+  border: solid 1px #ccc;
+  margin-left: 20px;
+}
+
+#shopcar .title .kuang .allselect {
+  width: 10px;
+  height: 10px;
+  background: red;
+}
+
+#shopcar .title .allllselect {
+  margin-left: 8px;
+}
+
+#shopcar .title .name {
+  margin-left: 100px;
+  width: 460px;
+}
+
+#shopcar .title .num {
+  text-align: center;
+  width: 200px;
+}
+
+#shopcar .title .total {
+  margin-left: 20px;
+}
+
+#shopcar .title .action {
+  margin-left: 80px;
+}
+
+#shopcar .cont {
+  margin: 20px auto;
+  cursor: pointer;
+  min-height: 300px;
+}
+
+#shopcar .cont li {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  border: solid 1px #ccc;
+  margin: 10px 0;
+}
+#shopcar .cont li.active{
+  background:rgba(247, 4, 4, 0.1)
+}
+#shopcar .cont li.tongji {
+  background: pink;
+}
+
+#shopcar .cont li .kuang {
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
+}
+
+#shopcar .cont li .kuang .select {
+  width: 16px;
+  height: 16px;
+}
+
+#shopcar .cont li img {
+  width: 66px;
+  height: 66px;
+  margin-left: 20px;
+}
+
+#shopcar .cont li .name {
+  margin-left: 10px;
+  width: 390px;
+  height: 50px;
+}
+
+#shopcar .cont li .name p {
+  width: 360px;
+  margin-bottom: 14px;
+}
+
+#shopcar .cont li .name span i {
+  font-size: 16px;
+  color: #f40;
+  margin-right: 5px;
+}
+
+#shopcar .cont li .price {
+  text-align: center;
+  width: 80px;
+  margin-left: 36px;
+  font: 900 14px "";
+}
+
+#shopcar .cont li .num {
+  text-align: center;
+  width: 200px;
+  margin-left: 0px;
+}
+
+#shopcar .cont li .num .minus {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px #ccc;
+}
+
+#shopcar .cont li .num input {
+  border: 0;
+  border: solid 1px #CCCCCC;
+  border-width: 1px 0 1px 0;
+  width: 40px;
+  text-align: center;
+  height: 16px;
+}
+
+#shopcar .cont li .num .iconfont {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px #ccc;
+}
+
+#shopcar .cont li .total {
+  text-align: center;
+  font: 900 16px "";
+  width: 90px;
+}
+
+#shopcar .cont li .del {
+  text-align: center;
+  width: 50px;
+  margin-left: 70px;
+}
+
+#shopcar #check {
+  height: 50px;
+  width: 100%;
+  border: solid 1px #ccc;
+  font-size: 14px;
+}
+
+#shopcar #check .kuang .allselect {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+#shopcar #check .allllselect {
+  margin-left: 8px;
+}
+
+#shopcar #check .explain {
+  margin-left: 60px;
+  flex: 1;
+  text-align: right;
+}
+
+#shopcar #check .explain .num {
+  font: 900 14px "";
+  margin: 0 4px;
+}
+
+#shopcar #check .total {
+  margin-left: 80px;
+  font-size: 16px;
+}
+
+#shopcar #check .total .totalprice {
+  text-align: center;
+  min-width: 60px;
+  font: 900 24px "";
+  margin: 0 4px;
+  color: red;
+}
+
+#shopcar #check input {
+  border: 0;
+  width: 80px;
+  height: 40px;
+  background: #f40;
+  color: #fff;
+  font: 900 18px/40px "";
+  border-radius: 8px;
+  margin: 0 20px 0 50px;
+}

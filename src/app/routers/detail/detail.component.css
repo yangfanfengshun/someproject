@@ -1,0 +1,221 @@
+#details {
+  background: #f1f1f1;
+  border-top: solid 1px #999;
+}
+
+#details-cover {
+  position: fixed;
+  border: 0;
+  width: 180px;
+  height: 40px;
+  background: rgba(100, 20, 88, 0.5);
+  color: #fff;
+  font: 900 20px/40px "";
+  border-radius: 10px;
+}
+
+#details .margin {
+  display: flex;
+}
+
+#details .pic {
+  margin-top: 30px;
+  position: relative;
+  width: 400px;
+  height: 518px;
+}
+
+#details .pic .b-pic {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 402px;
+  display: none;
+  overflow: hidden;
+}
+
+#details .pic .b-pic img {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#details .pic .m-pic {
+  box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border: solid 1px #ccc;
+  overflow: hidden;
+}
+
+#details .pic .m-pic img {
+  width: 400px;
+  height: 400px;
+}
+
+#details .pic .m-pic span {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 0;
+  top: 0;
+  background: rgba(100, 100, 100, 0.3);
+  display: none;
+}
+
+#details .pic .s-pic {
+  margin-top: 16px;
+}
+
+#details .pic .s-pic i {
+  display: block;
+  height: 66px;
+  width: 30px;
+  font: 30px/66px "";
+  border: solid 1px #ccc;
+  text-align: center;
+  color: #ccc;
+}
+
+#details .pic .s-pic p {
+  flex: 1;
+  margin: 0 10px;
+}
+
+#details .pic .s-pic p img {
+  width: 66px;
+  height: 66px;
+  border: solid 1px #ccc;
+}
+
+#details .cont {
+  margin: 30px 0 0 30px;
+  flex: 1;
+}
+
+#details .cont .title {
+  font: 900 24px/36px "";
+  width: 620px;
+}
+
+#details .cont .price {
+  display: flex;
+}
+
+#details .cont .price i {
+  font: 12px/36px "";
+}
+
+#details .cont .price span {
+  font: 900 22px/36px "";
+  color: red;
+  margin-left: 30px;
+}
+
+#details .cont .service i {
+  font: 12px/36px "";
+}
+
+#details .cont .service span {
+  font: 14px/36px "";
+  color: #666;
+  margin-left: 30px;
+}
+
+#details .cont .explain i {
+  font: 12px/36px "";
+}
+
+#details .cont .explain span {
+  font: 14px/36px "";
+  color: #666;
+  margin-left: 30px;
+}
+
+#details .cont .num {
+  margin-top: 10px;
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+}
+
+#details .cont .num .minus {
+  width: 20px;
+  height: 20px;
+  font: 900 14px/20px "";
+  text-align: center;
+  display: block;
+  border: solid 1px #ccc;
+  margin-left: 30px;
+}
+
+#details .cont .num input {
+  display: block;
+  width: 60px;
+  height: 20px;
+  background: #f0f0f0;
+  text-align: center;
+  border: 0;
+  border: solid 1px #ccc;
+  border-width: 1px 0 1px 0;
+  font: 900 12px/20px "";
+}
+
+#details .cont .num .plus {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font: 12px/20px "";
+  text-align: center;
+  display: block;
+  border: solid 1px #ccc;
+  color: #666;
+}
+
+#details .cont .num e .iconfont {}
+
+#details .cont .action {
+  width: 400px;
+  margin-top: 100px;
+}
+
+#details .cont .action .pay {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: #fff;
+  font: 100 18px/40px "";
+  text-align: center;
+  color: #f40;
+  border: solid 1px #f40;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#details .cont .action .addshop {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: #f40;
+  font: 100 18px/40px "";
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 50px;
+  cursor: pointer;
+}
+
+#details .cont .action .like {
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+}
+
+#details .cont .action .like i {
+  font-size: 18px;
+  color: #f40;
+}

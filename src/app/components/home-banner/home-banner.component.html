@@ -1,0 +1,27 @@
+<div id="banner">
+    
+    <div class="swiper-container imgbox p-cen">
+      <div class="swiper-wrapper">
+        <div 
+        class="swiper-slide p-cen" *ngFor="let data of slides">
+          <img [src]="data" width="100%">
+        </div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+     
+      <!-- 如果需要导航按钮 -->
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+    </div>
+
+    <div class="msg">
+        <div
+        *ngFor='let item of staticData.HomeBannerMsg'
+        >
+          <i class="iconfont">&#xe612;</i>
+          <span>{{ item.des }}</span>
+        </div>
+    </div>	
+
+  </div>

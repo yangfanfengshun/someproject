@@ -1,0 +1,44 @@
+.indexleft {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 150px;
+    background: #fff;
+    z-index: 10; }
+    .indexleft dl {
+      text-align: center; }
+   .indexleft dl dt {
+        text-align: center;
+        border: solid 1px #999;
+        padding: 5px 0; }
+  .indexleft dl dt span {
+          color: red;
+          font: 900 16px ""; }
+         .indexleft dl dt p {
+          padding: 2px;
+          font-size: 8px;
+          color: #999; }
+  
+  .indexleft dl dd {
+    font: 900 14px/18px "";
+    padding: 10px 0;
+    border: solid 1px #999;
+    margin-top: -1px; }
+    .indexleft dl dd {
+      color: #000; }
+  .indexleft dl dd li{
+      padding: 5px 0;
+      cursor: pointer;
+  }
+  .indexleft dl dd li.active{
+      color: #f40;
+  }
+  .indexleft dl dd li:hover{
+      color: #f40;
+  }
+   
+   .indexleft dl dd:nth-last-child(1) {
+      display: block;
+      color: #666;
+      font: 100 12px "";
+      padding: 5px 0; }

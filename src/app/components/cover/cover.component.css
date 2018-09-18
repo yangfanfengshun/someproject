@@ -1,0 +1,30 @@
+.forshop{
+	background: rgb(255,255,255,0.5);
+	position: fixed;
+}
+.forshop .p-cen{
+	position: absolute;
+	width: 500px;
+	height: 300px;
+	background: #ff7777;
+	border: solid 1px #999;
+	border-radius: 10px;
+}
+.forshop .p-cen .cont{
+	width: 500px;
+	height: 220px;
+	text-align: center;
+	font:900 30px/160px "";
+	color: #fff;
+}
+.forshop .p-cen input{
+	
+	width: 120px;
+	height: 40px;
+	border: 0;
+	border-radius: 10px;
+	background: #f40;
+	color: #fff;
+	margin: 20px 40px;
+	font:900 18px/40px "";
+}

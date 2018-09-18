@@ -1,0 +1,42 @@
+<div id="shopcar" class="margin">
+  <div class="title ">
+    
+    <p class="name">商品信息</p>
+    <p class="price">单价（元）</p>
+    <p class="num">数量</p>
+    <p class="total">金额（元）</p>
+    <p class="action">操作</p>
+  </div>
+  <ul class="cont">
+    <li
+    *ngFor='let item of store.ShopCarData;let i=index'
+    [class.active] = item?.view 
+    >
+        <div class="kuang">
+          <input type="checkbox" class="select" [checked]=item.view (click)="changeData('select',$event,i)">
+        </div>
+        <img [src]= item.src />
+        <div class="name">
+          <p class="over">{{ item.name2 }}</p>
+          <span><i class="iconfont">&#xe614;</i>支持30天无忧退货</span>
+        </div>
+        <p class="price">{{ item.price1 }}</p>
+        <div class="num j-cen">
+          <i class="minus" (click)="changeData('minus',$event,i)">一</i>
+          <input type="text" id="num" [(ngModel)]='item.count' (blur)="changeData('blur',$event,i)" />
+          <i class="iconfont plus" (click)="changeData('plus',$event,i)">&#xe698;</i>
+        </div>
+        <p class="total">{{ item.count * item.price1 }}</p>
+        <p class="del" (click)="changeData('del',$event,i)" >删除</p>
+    </li>
+  </ul>
+  <div class="j-cen" id="check" >
+    <div class="kuang">
+      <input type="checkbox" class="allselect" [checked]=store.AllSelect (click)="changeData('allselect',$event)">
+    </div>
+    <p class="allllselect ">全选</p>
+    <p class="explain">一共<span class="num">{{ store.TotalCount }}</span>件商品</p>
+    <p class="total j-cen">合计<span class="totalprice">{{ store.TotalPrice }}</span>元</p>
+    <input type="button"  value="去支付" />
+  </div>
+</div>

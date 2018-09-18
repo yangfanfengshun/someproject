@@ -1,0 +1,125 @@
+#main_show .kids {
+    height: 870px; }
+    #main_show .kids .title {
+      border-top: solid 1px #ccc; }
+      #main_show .kids .title span {
+        float: left;
+        font: 28px/60px ""; }
+      #main_show .kids .title dl {
+        float: left;
+        font-size: 12px;
+        margin: 30px 0 0 20px; }
+        #main_show .kids .title dl dt {
+          color: #999; }
+        #main_show .kids .title dl dd {
+          margin: 0 8px; }
+        #main_show .kids .title dl .active a {
+          color: #f40; }
+      #main_show .kids .title .more {
+        float: right;
+        margin: 30px 5px 0 0;
+        font-size: 14px;
+        color: #999; }
+    #main_show .kids .cont {
+      height: 570px; }
+      #main_show .kids .cont .left {
+        float: left;
+        width: 330px;
+        height: 542px; }
+        #main_show .kids .cont .left:hover e {
+          display: block; }
+      #main_show .kids .cont .middle {
+        float: left;
+        width: 550px;
+        border-top: solid 1px #ccc;
+        box-sizing: border-box; }
+        #main_show .kids .cont .middle li {
+          float: left;
+          width: 274px;
+          border-right: solid 1px #ccc;
+          border-bottom: solid 1px #ccc;
+          box-sizing: border-box; }
+          #main_show .kids .cont .middle li a {
+            position: relative;
+            background: #fff;
+            height: 269px; }
+            #main_show .kids .cont .middle li a span {
+              font: 900 26px "";
+              color: #666; }
+            #main_show .kids .cont .middle li a i {
+              font-size: 12px;
+              margin-top: 10px; }
+            #main_show .kids .cont .middle li a:hover e {
+              display: block; }
+      #main_show .kids .cont .right {
+        float: right;
+        width: 220px;
+        background: #fff; }
+        #main_show .kids .cont .right .top {
+          height: 61px;
+          padding: 0 10px;
+          border: solid 1px #CCCCCC;
+          border-width: 1px 1px 1px 0;
+          box-sizing: border-box; }
+          #main_show .kids .cont .right .top span {
+            font: 18px/60px ""; }
+          #main_show .kids .cont .right .top p .iconfont {
+            font-size: 26px;
+            color: #ccc;
+            margin-left: -20px; }
+          #main_show .kids .cont .right .top p .active {
+            color: #000; }
+        #main_show .kids .cont .right .reveal .j-cen {
+          height: 120px;
+          width: 220px;
+          border: solid 1px #ccc;
+          border-width: 0 1px 1px 0;
+          box-sizing: border-box; }
+        #main_show .kids .cont .right .reveal .price {
+          width: 118px;
+          margin-left: 14px; }
+          #main_show .kids .cont .right .reveal .price a {
+            font: 12px/16px "";
+            display: inline-block;
+            height: 32px;
+            overflow: hidden; }
+          #main_show .kids .cont .right .reveal .price p {
+            margin-top: 4px; }
+            #main_show .kids .cont .right .reveal .price p span {
+              font: 900 20px "";
+              color: red;
+              padding-right: 5px; }
+            #main_show .kids .cont .right .reveal .price p del {
+              text-decoration: line-through; }
+    #main_show .kids .brands dt {
+      height: 50px;
+      width: 1101px;
+      float: left;
+      font: 18px/50px "";
+      text-align: left;
+      background: #fff;
+      border: solid 1px #999;
+      margin-bottom: -1px;
+      box-sizing: border-box;
+      padding-left: 20px; }
+    #main_show .kids .brands dd {
+      float: left;
+      position: relative;
+      background: #fff;
+      width: 221px;
+      height: 167px;
+      border: solid 1px #999;
+      margin-right: -1px;
+      box-sizing: border-box; }
+      #main_show .kids .brands dd .pic {
+        display: inline-block; }
+      #main_show .kids .brands dd .iconfont {
+        position: absolute;
+        font: 900 24px "";
+        color: #f40;
+        right: 10px;
+        top: 10px;
+        display: none; }
+      #main_show .kids .brands dd:hover .iconfont {
+        display: block; }
+  

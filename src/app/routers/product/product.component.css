@@ -1,0 +1,99 @@
+#goodslist {
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+#goodslist .goods {
+  width: 262px;
+  height: 387px;
+  float: left;
+  position: relative;
+  margin: 0 5px 14px;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+#goodslist .goods:hover {
+  border-color: #f40;
+}
+
+#goodslist .goods .cont {
+  padding: 10px;
+}
+
+#goodslist .goods .cont .price span {
+  font-size: 10px;
+  color: red;
+}
+
+#goodslist .goods .cont .price span i {
+  font: 900 22px "";
+}
+
+#goodslist .goods .cont .price b {
+  color: #999;
+}
+
+#goodslist .goods .cont .name {
+  font-size: 12px;
+}
+
+#goodslist .goods .cont .name span {
+  display: inline-block;
+  color: red;
+}
+
+#goodslist .goods .cont .name .over {
+  display: inline-block;
+  width: 190px;
+  color: #666;
+  font: 12px/16px "";
+}
+
+#goodslist .goods .cont .explain {
+  margin: 5px 0;
+}
+
+#goodslist .goods .cont .explain span {
+  font-size: 12px;
+  color: #fff;
+  background: #f40;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+#goodslist .goods .cont .explain span.active {
+  color: #f40;
+  background: #fff;
+  border: solid 1px #f40;
+}
+
+#goodslist .goods .cont .hot {
+  font-size: 14px;
+}
+
+#goodslist .goods .cont .hot i {
+  font-size: 16px;
+  color: red;
+  float: left;
+}
+
+#goodslist .goods .cont .hot span {
+  float: left;
+  color: #333;
+  margin-left: 4px;
+}
+
+#goodslist .goods .cont .hot b {
+  float: right;
+  font-size: 12px;
+  color: #666;
+}
+
+#goodslist .goods .cont .self {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #777;
+}

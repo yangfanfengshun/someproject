@@ -1,0 +1,41 @@
+<div id="goodslist" >
+  <ul class="margin j-bet box">
+
+    <li 
+    class="goods"
+    *ngFor='let item of data.List'
+    >
+      <a (click)=ToDetail(item) ><img [src]= item.src /></a>
+      <div class="cont">
+        <p class="price">
+          <span>￥<i> {{ item.price1}}</i></span>
+          <u>|</u>
+          <b> {{ item.price2}}</b>
+        </p>
+        <p class="name">
+          <a href="#" class="j-bet">
+          <span> {{ item.name1}}</span>
+          <u>|</u>
+          <b class="over"> {{ item.name2}}</b>
+          </a>
+        </p>
+        <p class="explain">
+          <span class="active">自营</span>
+          <span>税费补贴</span>
+          <span>2件减40</span>
+          <span>特价</span>
+        </p>
+        <p class="hot clear">
+          <i class="iconfont">&#xe502;</i>
+          <span> {{ item.hot}}</span>
+          <b> {{ item.country}}</b>
+        </p>
+        <p class="self">网易考拉自营</p>
+      </div>
+    </li>
+
+  </ul>
+  <div class="pagination">
+    
+  </div>
+</div>

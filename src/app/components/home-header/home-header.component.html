@@ -1,0 +1,76 @@
+<header class="margin" id='homeheader'>
+    <div class="up j-bet">
+      
+        <a [routerLink]=staticData.LogoMsg?.link class="logo">
+          <h1>{{ staticData.LogoMsg?.title }}</h1>
+            <div class="j-cen">
+            <img [src]= staticData.LogoMsg?.src />
+            <span>{{ staticData.LogoMsg?.title }}</span>
+            </div>
+          <p>{{ staticData.LogoMsg?.title2 }}</p>
+        </a>
+      
+      <div class="up-m">
+        <div class="search j-bet">
+          <i class="iconfont">&#xe603;</i>
+          <input type="text" />
+          <span class="fangda j-cen"><span class="iconfont">&#xe603;</span></span>
+        </div>
+        <div class="options">
+          <span
+          *ngFor='let item of staticData.HeaderUnderSerach;trackBy:index'
+          >{{ item }}</span>
+        </div>
+      </div>
+      <div class="goodslist j-cen" routerLink = '/shopcar' >
+        <i class="iconfont">&#xe570;</i>
+        <b>购物车</b>
+        <span class="num">{{ store.ShopCarData.length }}</span>
+      </div>
+      
+      
+    </div>
+    <div class="nav">
+      <div class="alloptions j-cen">
+        <i class="iconfont all">&#xe636;<span >所有分类</span></i>
+        <ul class="subnav">
+          <li
+          *ngFor='let item of staticData.HeaderSubnavMsg;trackBy:index'
+          ><a class="j-bet">
+            <i class="iconfont">&#xe664;</i>
+            <span>{{ item.title}}</span>
+            <i class="iconfont">&#xe61c;</i>
+            <!-- <div class="sec_nav">
+              <dl >
+                <dt>化妆品</dt>
+                <dd><a href="goodslist.html" target="_blank">商品列表在在这</a></dd>
+                <dd>牌子2</dd>
+                <dd>牌子1</dd>
+                <dd>牌子</dd>
+                <dd>牌子2</dd>
+                <dd>牌子</dd>
+                <dd>牌子2</dd>
+                <dd>牌子2</dd>
+                <dd>牌子</dd>
+                <dd>牌子3</dd>
+                <dd>牌子2</dd>
+                <dd>牌子</dd>
+              </dl>
+            </div> -->
+          </a></li>
+          
+          
+          
+        </ul>
+      </div>
+      <a 
+      class="nav-a"
+      *ngFor='let item of staticData.HeaderNavMsg;trackBy:index'
+      [routerLink] = item?.link
+      routerLinkActive='active'
+      >{{ item.des }}</a>
+      
+    </div>	
+   
+  </header>
+

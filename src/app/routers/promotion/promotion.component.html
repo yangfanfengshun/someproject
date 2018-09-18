@@ -1,0 +1,28 @@
+<div class="banner">
+  <img [src]= staticData.PromotionStaticBanner?.src  />
+</div>
+
+<div class="hotbrands margin">
+  <p class="title">热门品牌</p>
+  <div class="imgbo j-cen">
+    <img *ngFor='let item of staticData.PromotionStaticHotBands' [src]= item />
+  </div>
+</div>
+
+<div class="per-main">
+  <ul class="margin">
+    <li>
+      <h3 class="title">第一个特价专区</h3>
+      <ul class="floor1 j-cen">
+        
+      </ul>
+    </li>
+    <li>
+      <h3 class="title">第六个特价专区</h3>
+      <ul class="floor6  j-cen">
+        
+      </ul>
+    </li>
+  </ul>
+</div>
+

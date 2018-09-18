@@ -1,0 +1,77 @@
+#service .top{
+	height: 160px;
+	border-bottom: solid 1px #ccc;
+}
+
+#service .top .j-cen{
+	margin: 0 40px;
+}
+
+#service .top .j-cen div:nth-child(2){
+	height: 36px;
+	margin-left: 8px;
+}
+
+#service .top .iconfont{
+	font-size: 40px;
+}
+#service .top span{
+	font:900 14px/18px "";
+
+}
+#service .top p{
+	font-size: 12px;
+	margin-top: 3px;
+}
+
+
+#service .down{
+	height: 210px;
+	display: flex;
+	justify-content: space-between;
+	padding:30px 20px 0 20px;
+	box-sizing: border-box;
+	color: #333;
+}
+#service .down .logo{}
+#service .down .logo .kaola{
+	height: 40px;
+}
+#service .down .logo .kaola img{
+	width: 60px;
+	height: 40px;
+	display: block;
+}
+#service .down .logo .kaola span{
+	font-size: 26px;
+	padding-left: 10px;
+	color: #000;
+}
+#service .down .logo p{
+	margin-top:10px ;
+	text-align: center;
+}
+#service .down .logo p span{
+	font-size: 14px;
+}
+#service .down .logo p i{
+	font-size: 28px;
+}
+#service .down .logo p i:nth-child(2){color:#ff0a0a ;}
+#service .down .logo p i:nth-child(3){color: #1cba28;}
+#service .down .logo p i:nth-child(4){color:#39cdaf ;}
+#service .down dl{}
+#service .down dl dt{
+	font: 900 14px "";
+	padding-bottom: 10px;
+}
+#service .down dl dd{
+	font-size: 12px;
+	padding: 6px 0;
+}
+#service .down .ma{}
+#service .down .ma img{}
+#service .down .ma p{
+	text-align: center;
+	margin-top: 10px;
+}

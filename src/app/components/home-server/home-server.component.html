@@ -1,0 +1,50 @@
+<div id="service" class="margin">
+    <div class="top j-cen">
+      <div 
+      class="j-cen"
+      *ngFor = 'let item of staticData.SerachTopMsg;trackBy:index'
+      >
+        <div><i class="iconfont">&#xe604;</i></div>
+        <div>
+          <span>{{ item.title }}</span>
+          <p>{{ item.des }}</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="down">
+      <div class="logo">
+        <a [routerLink]=staticData.LogoMsg?.link class="kaola j-cen">
+          <img [src]=staticData.LogoMsg?.src />
+          <span>{{ staticData.LogoMsg?.title }}</span>
+        </a>
+        <p>
+          <span>关注我们:</span>
+          <i class="iconfont">&#xe632;</i>
+          <i class="iconfont">&#xe608;</i>
+          <i class="iconfont">&#xe503;</i>
+        </p>
+      </div>
+      <dl>
+        <dt>考拉保障</dt>
+        <dd><a href="#">假一赔十</a></dd>
+        <dd><a href="#">廉政监督</a></dd>
+      </dl>
+      <dl
+      *ngFor='let item of staticData.ServerMsg'
+      >
+        <dt>{{ item.title }}</dt>
+        <dd><a>{{ item.des1 }}</a></dd>
+        <dd><a>{{ item.des2 }}</a></dd>
+        <dd><a>{{ item.des3 }}</a></dd>
+        <dd><a>{{ item.des4 }}</a></dd>
+      </dl>
+      
+      
+      
+      <div class="ma">
+        <img src="/assets/images/service/880b10ac-5714-4c1b-89a9-e24c2302ac79.png"/>
+        <p>扫码下载手机版</p>
+      </div>
+    </div>
+  </div>

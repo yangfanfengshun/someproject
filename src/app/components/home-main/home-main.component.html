@@ -1,0 +1,36 @@
+<div id="main_up">
+    <div class="margin">
+      <ul class="first_floor clear">
+        <li class="box">
+          <ul class="clear j-cen"> 
+            <li
+            *ngFor='let item of staticData.HomeMainFirstFloor'
+            ><a><img [src]= item /></a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="second_floor">
+        <h2 class="title j-bet">
+          <span>今日限时购</span>
+          <a href="#">进入限时购频道></a>
+        </h2>
+        <ul class="goodslist">
+          <li 
+          class="clear"
+          *ngFor='let item of staticData.HomeMainSecondFloor'>
+            <a class="img"><img [src]= item.src /></a>
+            <div >
+              <h3><a >{{ item.title }}</a></h3>
+              <h4><a >{{ item.des }}</a></h4>
+              <p>
+                <b>￥</b><span>{{ item.price }}</span>
+                <i>￥</i><del>{{ item.price2 }}</del>
+              </p>
+              <a  class="now">进入专区</a>
+            </div>
+          </li>
+        </ul>
+        <a  class="aside"><img src="/assets/images/main/main-up/second_floor/1cetc1p0c60_260_380.png" alt="" /></a>
+      </div>
+    </div>
+  </div>

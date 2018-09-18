@@ -1,0 +1,49 @@
+<div id="details" class="clear">
+    <input type="button" *ngIf='CoverBl' id="details-cover" value="添加购物车成功" class="p-cen" />
+    <div class="margin" id="margin">
+      <div class="pic">
+        <div class="b-pic">
+          <img [src]=store.DetailData?.src />
+        </div>
+        <div class="m-pic">
+          <i class="cover"></i>
+          <span class="move"></span>
+          <img [src]=store.DetailData?.src/>
+        </div>
+        <div class="s-pic j-bet">
+          <i class="iconfont">&#xe64b;</i>
+          <p>
+            <img [src]=store.DetailData?.src />
+          </p>
+          <i class="iconfont">&#xe61c;</i>
+        </div>
+      </div>
+      <div class="cont ">
+        <p class="title">{{ store.DetailData?.name2 }}</p>
+        <p class="price">
+          <i>售价</i>
+          <span>{{ store.DetailData?.price1 }}</span>
+        </p>
+        <p class="service">
+          <i>服务</i>
+          <span>本商品由自营保税仓发货</span>
+        </p>
+        <p class="explain">
+          <i>说明</i>
+          <span>√黑卡会员96折</span>
+          <span>√支持30天无忧退货</span>
+        </p>
+        <div class="num">
+          <b>数量</b>
+          <i class="minus" (click)='changeCount("minus",$event)' >一</i>
+          <input  type="text" class="count" [(ngModel)]='count' (blur)='changeCount("blur",$event)' />
+          <s class="plus" (click)='changeCount("plus",$event)' ><i class="iconfont">&#xe698;</i></s>
+        </div>
+        <p class="action j-cen">
+          <span class="pay">立即购买</span>
+          <span class="addshop" (click)='addShopCar()' >加入购物车</span>
+          <span class="like"><i class="iconfont">&#xe502;</i>收藏</span>
+        </p>
+      </div>
+  </div>
+</div>
